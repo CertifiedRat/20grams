@@ -55,183 +55,186 @@
     </nav>
   </header>
 
-
   <main id="menu">
     <div class="grid_1-1-1">
       <div>
         <h1>MENU</h1>
-        <p class="intro">At 20 Grams, breakfast, brunch, desserts, and coffee come together for the ultimate good-vibes
-          experience.
-          From
-          09:00–15:00 every day, we serve brunch and breakfast worth waking up for—whether you’re craving a hearty
-          feast,
-          fluffy
-          waffles, homemade sourdough sandwiches, or something sweet on the side. Vegan, vegetarian, and gluten-free
-          options?
-          Absolutely. Everyone’s invited to the table.
-
-          Our sourdough bread comes fresh from artisan bakery Albatross og Venner, stacked with delicious fillings and
-          toasted to
-          perfection. And for dessert lovers, there’s Claudia’s homemade Basque cheesecake—smooth, creamy, gluten-free,
-          and
-          available by the slice to enjoy on the go.
-
-          To drink? We’ve got everything from bold coffee and creamy matcha lattes to chai, hot chocolate, fresh juices,
+        <p class="intro">
+          At 20 Grams, breakfast, brunch, desserts, and coffee come together for the ultimate good-vibes experience.
+          From 09:00–15:00 every day, we serve brunch and breakfast worth waking up for—whether you’re craving a hearty
+          feast, fluffy waffles, homemade sourdough sandwiches, or something sweet on the side. Vegan, vegetarian, and
+          gluten-free options? Absolutely. Everyone’s invited to the table. Our sourdough bread comes fresh from artisan
+          bakery Albatross og Venner, stacked with delicious fillings and toasted to perfection. And for dessert lovers,
+          there’s Claudia’s homemade Basque cheesecake—smooth, creamy, gluten-free, and available by the slice to enjoy
+          on the go. To drink? We’ve got everything from bold coffee and creamy matcha lattes to chai, hot chocolate,
+          fresh juices,
           smoothies, and seasonal favorites like pumpkin spice and non-alcoholic gløgg.
         </p>
-
       </div>
       <div></div>
-      <img class="hc_leah" src="imgs/generel/menu/image26.png" alt="Hc og Leah">
-
+      <img class="hc_leah" src="imgs/generel/menu/image26.png" alt="Hc og Leah" />
     </div>
-    <div>
+    <div class="menu-panel">
       <h5>The Menu</h5>
-      <p class="brunch_text">Whether you’re stopping by for
-        brunch,
-        cake, or just a cozy drink, 20 Grams is all about good food, good coffee, and good vibes. So take your time and
-        flip through the menu and see what we have to offer.</p>
-      <div>
-        <div>
-          <ul class="menu_punkter">
-            <li class="flex topdown">COFFEE</li>
-            <li class="flex topdown">OTHER DRINKS</li>
-            <li class="flex topdown">SANDWICHES</li>
-            <li class="flex topdown">BREAKFAST/BRUNCH</li>
-            <li class="flex topdown">SNACKS/CAKES</li>
-
-          </ul>
-        </div>
+      <p class="brunch_text">Whether you’re stopping by for brunch, cake, or just a cozy drink, 20 Grams is all about
+        good food, good coffee, and good vibes. So take your time and flip through the menu and see what we have to
+        offer.</p>
+      <!-- Menupunkterne i desktop visning -->
+      <div class="menu-valg-desktop-wrapper">
+        <button class="menu-valg-desktop" data-menu="coffee">Coffee</button>
+        <button class="menu-valg-desktop" data-menu="drinks">Other Drinks</button>
+        <button class="menu-valg-desktop" data-menu="sandwich">Sandwiches</button>
+        <button class="menu-valg-desktop" data-menu="breakfast">Breakfast/Brunch</button>
+        <button class="menu-valg-desktop" data-menu="snacks">Snacks</button>
       </div>
       <div class="frame">
-        <div class="menu_drop">
-          <details class="dropdown">
-            <summary id="drop_pil" class="flex">
-              <h5>COFFEE</h5>
-              <span class="material-symbols-outlined pil">arrow_forward_ios</span>
-            </summary>
-            <a href="/">
-              <div class="topdown">COFFEE</div>
-            </a>
-            <a href="/">
-              <div class="topdown">OTHER DRINKS</div>
-            </a>
-            <a href="/">
-              <div class="topdown">SANDWICHES</div>
-            </a>
-            <a href="/">
-              <div class="topdown">BREAKFAST/BRUNCH</div>
-            </a>
-            <a href="/">
-              <div class="topdown">SNACKS/CAKES</div>
-            </a>
-          </details>
-
+        <!-- Dropdown menuen i mobil -->
+        <div class="dropdown-wrapper">
+          <select id="menu-dropdown" class="menu-valg">
+            <option value="coffee" selected>Coffee</option>
+            <option value="drinks">Other Drinks</option>
+            <option value="sandwich">Sandwiches</option>
+            <option value="breakfast">Breakfast/&shy;Brunch</option>
+            <option value="snacks">Snacks</option>
+          </select>
         </div>
-        <div class="grid_1-1">
-          <div class="coffee">
+
+
+
+        <div id="coffee" class="menukort active">
+          <h5 class="desktop">COFFEE</h5>
+          <span>
             <ul>
               <li class="flex">
-                <p class="menu_text">Espresso</p><span class="punktum"></span>
+                <p class="menu_text">Espresso</p>
+                <span class="punktum"></span>
                 <p class="menu_text">36</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Cortado</p><span class="punktum"></span>
+                <p class="menu_text">Cortado</p>
+                <span class="punktum"></span>
                 <p class="menu_text">42</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Americano</p><span class="punktum"></span>
+                <p class="menu_text">Americano</p>
+                <span class="punktum"></span>
                 <p class="menu_text">41</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Cappuccino small/big</p><span class="punktum"></span>
+                <p class="menu_text">Cappuccino small/big</p>
+                <span class="punktum"></span>
                 <p class="menu_text">49/52</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Flat White</p><span class="punktum"></span>
+                <p class="menu_text">Flat White</p>
+                <span class="punktum"></span>
                 <p class="menu_text">49</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Caffe Latte small/big</p><span class="punktum"></span>
+                <p class="menu_text">Caffe Latte small/big</p>
+                <span class="punktum"></span>
                 <p class="menu_text">49/54</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Filter Coffee</p><span class="punktum"></span>
+                <p class="menu_text">Filter Coffee</p>
+                <span class="punktum"></span>
                 <p class="menu_text">41</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Iced Matcha Latte</p><span class="punktum"></span>
+                <p class="menu_text">Iced Matcha Latte</p>
+                <span class="punktum"></span>
                 <p class="menu_text">58</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Iced Americano</p><span class="punktum"></span>
+                <p class="menu_text">Iced Americano</p>
+                <span class="punktum"></span>
                 <p class="menu_text">45</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Iced Latte</p><span class="punktum"></span>
+                <p class="menu_text">Iced Latte</p>
+                <span class="punktum"></span>
                 <p class="menu_text">55</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Freddo Espresso</p><span class="punktum"></span>
+                <p class="menu_text">Freddo Espresso</p>
+                <span class="punktum"></span>
                 <p class="menu_text">40</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Freddo Cappuccino</p><span class="punktum"></span>
+                <p class="menu_text">Freddo Cappuccino</p>
+                <span class="punktum"></span>
                 <p class="menu_text">55</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Pumpkin Caffe Latte small/big (autumn season)</p><span class="punktum"></span>
+                <p class="menu_text">Pumpkin Caffe Latte small/big</p>
+                <span class="punktum"></span>
                 <p class="menu_text">59/64</p>
               </li>
-
+              <li class="flex">
+                <p class="menu_text small_txt">(autumn season)</p>
+              </li>
             </ul>
             <ul>
               <li class="flex">
-                <p class="menu_text">Babyccino</p><span class="punktum"></span>
+                <p class="menu_text">Babyccino</p>
+                <span class="punktum"></span>
                 <p class="menu_text">25</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Extra double shot espresso</p><span class="punktum"></span>
+                <p class="menu_text">Extra double shot espresso</p>
+                <span class="punktum"></span>
                 <p class="menu_text">20</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Oat Milk</p><span class="punktum"></span>
+                <p class="menu_text">Oat Milk</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+5</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Syrup</p><span class="punktum"></span>
+                <p class="menu_text">Syrup</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+5</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Milk Jar</p><span class="punktum"></span>
+                <p class="menu_text">Milk Jar</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+5</p>
               </li>
-
             </ul>
+          </span>
+          <div class="menupic coffeecup">
+            <img src="imgs/generel/menu/coffee.svg" alt="coffee cups" />
           </div>
-          <div class="drinks">
+        </div>
+        <div id="drinks" class="menukort">
+          <h5 class="desktop">OTHER DRINKS</h5>
+          <span>
             <div>
-              OTHER DRINKS
               <ul>
                 <li class="flex_title">HYGGE IN A MUG</li>
                 <li class="flex">
-                  <p class="menu_text">Hot Chocolate</p><span class="punktum"></span>
+                  <p class="menu_text">Hot Chocolate</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">55</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Chai Latte</p><span class="punktum"></span>
+                  <p class="menu_text">Chai Latte</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">55</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Tea</p><span class="punktum"></span>
+                  <p class="menu_text">Tea</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">40</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Matcha Latte</p><span class="punktum"></span>
+                  <p class="menu_text">Matcha Latte</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">55</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Pumpkin Chai Latte (autumn season) </p><span class="punktum"></span>
+                  <p class="menu_text">Pumpkin Chai Latte (autumn season)</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">59</p>
                 </li>
               </ul>
@@ -240,58 +243,67 @@
               <ul>
                 <li class="flex_title">HEALTHY LIFE POTIONS</li>
                 <li class="flex">
-                  <p class="menu_text">Vitamin juice mix small/big</p><span class="punktum"></span>
+                  <p class="menu_text">Vitamin juice mix small/big</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">59/69</p>
                 </li>
                 <li class="flex description">Mix of all: orange, apple, carrot, ginger</li>
                 <li class="flex">
-                  <p class="menu_text">Smoothie small/big</p><span class="punktum"></span>
+                  <p class="menu_text">Smoothie small/big</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">59/69</p>
                 </li>
                 <li class="flex description">Mix of all: strawberry, banana and pineapple juice</li>
                 <li class="flex">
-                  <p class="menu_text">Water</p><span class="punktum"></span>
+                  <p class="menu_text">Water</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">30/30</p>
                 </li>
                 <li class="flex description">still/sparkling</li>
               </ul>
             </div>
+          </span>
+          <div class="menupic otherdrinks">
+            <img src="imgs/generel/menu/other_drinks.svg" alt="other drinks" />
           </div>
-          <div class="sandwich">
+        </div>
+        <div id="sandwich" class="menukort">
+          <h5 class="desktop">SANDWICHES</h5>
+          <span>
             <div>
-              HOMEMADE SANDWICHES
               <ul>
                 <li class="flex">
-                  <p class="menu_text">Avocado-Hummus Toast</p><span class="punktum"></span>
-                  <p class="menu_text"> 119</p>
+                  <p class="menu_text">Avocado-Hummus Toast</p>
+                  <span class="punktum"></span>
+                  <p class="menu_text">119</p>
                 </li>
-                <li class="flex description">1 freshly toasted slice of sourdough bread, tasty hummus, fresh
-                  avocado, cherry tomatoes, a little crunchy salad topped with a
-                  mix of grated hard cheeses, chives, 20 grams’ organic secret spices
-                </li>
+                <li class="flex description">1 freshly toasted slice of sourdough bread, tasty hummus, fresh avocado,
+                  cherry tomatoes, a little crunchy salad topped with a mix of grated hard cheeses, chives, 20 grams’
+                  organic secret spices</li>
                 <li class="flex description">+ for vegan option, please ask the barista</li>
                 <li class="flex">
-                  <p class="menu_text">Avocado-Cheasy Toast</p><span class="punktum"></span>
+                  <p class="menu_text">Avocado-Cheasy Toast</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">119</p>
                 </li>
                 <li class="flex description">1 freshly toasted slice of sourdough bread, tasty cottage cheese
-                  (hytteost), fresh avocado, cherry tomatoes, a little
-                  crunchy salad topped with a mix of grated hard cheeses, chives, 20 grams’ organic secret spices</li>
+                  (hytteost), fresh avocado, cherry tomatoes, a little crunchy salad topped with a mix of grated hard
+                  cheeses, chives, 20 grams’ organic secret spices</li>
                 <li class="flex">
-                  <p class="menu_text">Salami between clouds sandwich</p><span class="punktum"></span>
+                  <p class="menu_text">Salami between clouds sandwich</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">125</p>
                 </li>
                 <li class="flex description">2 fresh slices of sourdough bread, organic butter, fresh mozzarella cheese,
-                  italian salami, red pesto, a little crunchy
-                  salad topped with a mix of grated hard cheeses, chives</li>
+                  italian salami, red pesto, a little crunchy salad topped with a mix of grated hard cheeses, chives
+                </li>
                 <li class="flex">
-                  <p class="menu_text">Avocado, my love! sandwich</p><span class="punktum"></span>
+                  <p class="menu_text">Avocado, my love! sandwich</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">129</p>
                 </li>
                 <li class="flex description">2 fresh slices of sourdough bread, tasty hummus, fresh avocado, a little
-                  crunchy salad topped with a mix of grated hard
-                  cheeses, chives, 20 grams’ organic secret spices
-                </li>
+                  crunchy salad topped with a mix of grated hard cheeses, chives, 20 grams’ organic secret spices</li>
                 <li class="flex description">+ for vegan option, please ask the barista</li>
               </ul>
             </div>
@@ -299,109 +311,133 @@
               <ul>
                 <li class="flex_title">Extras</li>
                 <li class="flex">
-                  <p class="menu_text">Add omelette on top</p><span class="punktum"></span>
+                  <p class="menu_text">Add omelette on top</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">+22</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Add 1 fried egg on top</p><span class="punktum"></span>
+                  <p class="menu_text">Add 1 fried egg on top</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">+20</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Add extra avocado on top</p><span class="punktum"></span>
+                  <p class="menu_text">Add extra avocado on top</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">+20</p>
                 </li>
                 <li class="flex">
-                  <p class="menu_text">Add melted gouda cheese on top</p><span class="punktum"></span>
+                  <p class="menu_text">Add melted gouda cheese on top</p>
+                  <span class="punktum"></span>
                   <p class="menu_text">+20</p>
                 </li>
                 <li class="flex description">(vegan option available also)</li>
-
               </ul>
             </div>
+          </span>
+          <div class="menupic sandwiches">
+            <img src="imgs/generel/menu/sandwich.svg" alt="sandwich" />
           </div>
-          <div class="breakfast">
-            BREAKFAST/BRUNCH
+        </div>
+        <div id="breakfast" class="menukort">
+          <h5 class="desktop">BREAKFAST/BRUNCH</h5>
+          <span>
             <div>
               <li class="flex_title">BREAKFAST</li>
               <li class="flex">
-                <p class="menu_text">Breakfast (8 elements)</p><span class="punktum"></span>
+                <p class="menu_text">Breakfast (8 elements)</p>
+                <span class="punktum"></span>
                 <p class="menu_text">159</p>
               </li>
               <li class="flex description">2 øko scrambled eggs topped with chives, sourdough bread, rye bread, hard
-                cheese, melted gouda cheese, granola-yogurt
-                jar w. fruits, organic butter,
-                black currant marmelade</li>
+                cheese, melted gouda cheese, granola-yogurt jar w. fruits, organic butter, black currant marmelade</li>
             </div>
             <div>
               <li class="flex_title">BRUNCH</li>
               <li class="flex">
-                <p class="menu_text">Granny's PLATE (11 elements)</p><span class="punktum"></span>
+                <p class="menu_text">Granny's PLATE (11 elements)</p>
+                <span class="punktum"></span>
                 <p class="menu_text">179</p>
               </li>
-              <li class="flex description">2 øko scrambled eggs topped with chives, sourdough bread, rye bread,
-                organic butter, granola-yogurt jar w. fruits, italian salami, avocado w. pesto,
-                hard cheese, melted gouda cheese, blackcurrant marmelade, slice of orange</li>
+              <li class="flex description">2 øko scrambled eggs topped with chives, sourdough bread, rye bread, organic
+                butter, granola-yogurt jar w. fruits, italian salami, avocado w. pesto, hard cheese, melted gouda
+                cheese, blackcurrant marmelade, slice of orange</li>
               <li class="flex">
-                <p class="menu_text">Vegetarian MOOD (11 elements)</p><span class="punktum"></span>
+                <p class="menu_text">Vegetarian MOOD (11 elements)</p>
+                <span class="punktum"></span>
                 <p class="menu_text">179</p>
               </li>
-              <li class="flex description">2 øko scrambled eggs topped with chives, sourdough bread, rye bread,
-                organic butter, granola-yogurt jar w. fruits, hummus, avocado w. pesto, hard
-                cheese, melted gouda cheese, blackcurrant marmelade, slice of orange</li>
+              <li class="flex description">2 øko scrambled eggs topped with chives, sourdough bread, rye bread, organic
+                butter, granola-yogurt jar w. fruits, hummus, avocado w. pesto, hard cheese, melted gouda cheese,
+                blackcurrant marmelade, slice of orange</li>
               <li class="flex">
-                <p class="menu_text">Vegan FRIDA (10 elements)</p><span class="punktum"></span>
+                <p class="menu_text">Vegan FRIDA (10 elements)</p>
+                <span class="punktum"></span>
                 <p class="menu_text">179</p>
               </li>
-              <li class="flex description">Hummus topped with chives, avocado w. pesto, sourdough bread, rye bread,
-                chia pudding jar w. fruits and coconut, melted vegan cheese, vegan butter,
-                blackcurrant marmelade, vegan yogurt, slice of orange</li>
+              <li class="flex description">Hummus topped with chives, avocado w. pesto, sourdough bread, rye bread, chia
+                pudding jar w. fruits and coconut, melted vegan cheese, vegan butter, blackcurrant marmelade, vegan
+                yogurt, slice of orange</li>
             </div>
             <div>
               <li class="flex_title">Extra</li>
               <li class="flex">
-                <p class="menu_text">1 slice of sourdough bread</p><span class="punktum"></span>
+                <p class="menu_text">1 slice of sourdough bread</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+10</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Butter & marmelade</p><span class="punktum"></span>
+                <p class="menu_text">Butter & marmelade</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+10</p>
               </li>
               <li class="flex">
-                <p class="menu_text">1 fried egg</p><span class="punktum"></span>
+                <p class="menu_text">1 fried egg</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+20</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Omelette</p><span class="punktum"></span>
+                <p class="menu_text">Omelette</p>
+                <span class="punktum"></span>
                 <p class="menu_text">+22</p>
               </li>
             </div>
+          </span>
+          <div class="menupic brunches">
+            <img src="imgs/generel/menu/brunch.svg" alt="brunch" />
           </div>
-          <div class="snacks">
-            SNACKS/CAKES
+        </div>
+        <div id="snacks" class="menukort">
+          <h5 class="desktop">SNACKS/CAKES</h5>
+          <span>
             <div>
               <li class="flex_title">OUR BESTSELLER</li>
               <li class="flex">
-                <p class="menu_text">CLAUDIA'S homemade BASQUE CHEESECAKE</p><span class="punktum"></span>
+                <p class="menu_text">CLAUDIA'S homemade BASQUE CHEESECAKE</p>
+                <span class="punktum"></span>
                 <p class="menu_text">68</p>
               </li>
             </div>
             <div>
               <li class="flex_title">I'M IN A MOOD FOR</li>
               <li class="flex">
-                <p class="menu_text">Vegan homemade banana bread</p><span class="punktum"></span>
+                <p class="menu_text">Vegan homemade banana bread</p>
+                <span class="punktum"></span>
                 <p class="menu_text">45</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Butter Croissant</p><span class="punktum"></span>
+                <p class="menu_text">Butter Croissant</p>
+                <span class="punktum"></span>
                 <p class="menu_text">35</p>
               </li>
               <li class="flex">
-                <p class="menu_text">Chia pudding</p><span class="punktum"></span>
+                <p class="menu_text">Chia pudding</p>
+                <span class="punktum"></span>
                 <p class="menu_text">79</p>
               </li>
               <li class="flex description">Chia, oat milk, coconut, vegan vanilla yogurt, chopped almonds, fruits</li>
               <li class="flex">
-                <p class="menu_text">Yogurt</p><span class="punktum"></span>
+                <p class="menu_text">Yogurt</p>
+                <span class="punktum"></span>
                 <p class="menu_text">79</p>
               </li>
               <li class="flex description">Greek yogurt, honey, granola, fruits</li>
@@ -409,18 +445,21 @@
             <div>
               <li class="flex_title">WAFFLES</li>
               <li class="flex">
-                <p class="menu_text">Chocolate my day</p><span class="punktum"></span>
+                <p class="menu_text">Chocolate my day</p>
+                <span class="punktum"></span>
                 <p class="menu_text">98</p>
               </li>
               <li class="flex description">Nutella, banana, strawberry, powdered sugar, whipped cream</li>
               <li class="flex">
-                <p class="menu_text">Yellow Fellow</p><span class="punktum"></span>
+                <p class="menu_text">Yellow Fellow</p>
+                <span class="punktum"></span>
                 <p class="menu_text">98</p>
               </li>
               <li class="flex description">Peanut butter, banana, strawberry, powdered sugar, honey, chopped almonds
               </li>
               <li class="flex">
-                <p class="menu_text">Blue Picasso</p><span class="punktum"></span>
+                <p class="menu_text">Blue Picasso</p>
+                <span class="punktum"></span>
                 <p class="menu_text">98</p>
               </li>
               <li class="flex description">Cinnamon, blueberries, whipped cream, chopped chocolate, powdered sugar</li>
@@ -428,17 +467,23 @@
             <div>
               <li class="flex_title">CLAUDIA'S NEW OBSESSION</li>
               <li class="flex">
-                <p class="menu_text">Dubai Cheesecake</p><span class="punktum"></span>
+                <p class="menu_text">Dubai Cheesecake</p>
+                <span class="punktum"></span>
                 <p class="menu_text">93</p>
               </li>
             </div>
+          </span>
+          <div class="menupic cakes">
+            <img src="imgs/generel/menu/cake.svg" alt="cakes" />
           </div>
-          <!-- <img class="menu_pic" src="imgs/generel/menu/kopper.png" alt="Kaffe kopper"> -->
         </div>
       </div>
     </div>
-    <img class="ring" src="imgs/generel/menu/coffee-ring-2_1.png" alt="coffe ring">
-    <div class="frame">
+    </div>
+    <div class="ring">
+      <img src="imgs/generel/menu/coffee-ring-2_1.png" alt="coffe ring" />
+    </div>
+    <div class="frame frame2">
       <h5>Come and visit us</h5>
       <div class="grid_1-2">
         <div class="text">
@@ -447,80 +492,17 @@
         </div>
         <a href="contact.html">
           <div class="vis">
-            <img class="visit port_bag" src="imgs/generel/menu/vesterport.jpg" alt="Vesterport">
-            <img class="visit port_for" src="imgs/generel/menu/noerreport.jpg" alt="Nørreport">
+            <img class="visit port_bag" src="imgs/generel/menu/vesterport.jpg" alt="Vesterport" />
+            <img class="visit port_for" src="imgs/generel/menu/noerreport.jpg" alt="Nørreport" />
           </div>
         </a>
       </div>
-
     </div>
   </main>
 
-
-  <!-- <footer>
-    <div class="footer-wrapper">
-      <div class="slogan">
-        <p><span class="brandname">20Grams</span> - Where Coffee Is Just the Beginning</p>
-      </div>
-      <nav>
-        <ul class="footernav">
-          <li class="flex"><a href="index.html">Home</a></li>
-          <li class="flex"><a href="menu.html">Menu</a></li>
-          <li class="flex"><a href="about.html">About Us</a></li>
-          <li class="flex"><a href="contact.html">Booking & Contact</a></li>
-        </ul>
-        <div class="footer-logo">
-          <a href="index.html">
-            <img src="imgs/generel/logo.webp" alt="Logo" />
-          </a>
-        </div>
-      </nav>
-      <span class="line"></span>
-      <div class="footer-location">
-        <h4 class="navlink">Our Locations</h4>
-        <span class="flex"><span class="mdi--location"></span>
-          <p class="navlink">Nørreport</p>
-        </span>
-        <div class="flex openinghours">
-          <p>Monday - Saturday</p>
-          <p>08:00 — 18:45</p>
-        </div>
-        <span class="line"></span>
-        <div class="flex openinghours">
-          <p>Sunday</p>
-          <p>08:00 — 17:45</p>
-        </div>
-      </div>
-      <div class="footer-location">
-        <span class="flex"><span class="mdi--location"></span>
-          <p class="navlink">Vesterport</p>
-        </span>
-        <div class="flex openinghours">
-          <p>Monday - Saturday</p>
-          <p>09:00 — 18:45</p>
-        </div>
-        <span class="line"></span>
-        <div class="flex openinghours">
-          <p>Sunday</p>
-          <p>09:00 — 17:45</p>
-        </div>
-      </div>
-      <span class="line"></span>
-      <div class="footer-socialmedia">
-        <span>
-          <a href="https://www.instagram.com/20gramsdk"><span class="mdi--instagram"></span></a><a
-            href="https://www.facebook.com/20gramscph"><span class="gg--facebook"></span></a><a
-            href="https://www.tiktok.com/@20gramsdk"><span class="ic--baseline-tiktok"></span></a>
-        </span>
-        <div class="signature">
-          <p class="brandname">20Grams</p>
-          <p class="cph">COPENHAGEN</p>
-        </div>
-      </div>
-    </div>
-  </footer> -->
   <script src="javascript/login.js"></script>
   <script src="javascript/burgermenu.js"></script>
+  <script src="javascript/menu.js"></script>
 </body>
 
 </html>
