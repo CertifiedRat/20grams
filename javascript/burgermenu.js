@@ -8,3 +8,11 @@ function burgerClick() {
   nav.classList.toggle("active");
   socialmedia.classList.toggle("active");
 }
+
+/* Form */
+const form = document.querySelector("form#contactform");
+form?.addEventListener("invalid", cancelPopup, true);
+function cancelPopup(event) {
+  event.preventDefault();
+  form.querySelector(":user-invalid").focus();
+}
