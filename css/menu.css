@@ -20,12 +20,9 @@ li.flex {
   padding-left: 10px;
 }
 .grid_1-1-1 {
-  display: grid;
-  grid-template-columns: 5fr 0.1fr 3fr;
-  gap: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   .hc_leah {
-    margin-top: 100px;
+    display: none;
   }
   .intro {
     margin-top: 20px;
@@ -105,23 +102,13 @@ p.menu_text {
 .vis {
   display: flex;
   margin-right: 20px;
+  gap: 5px;
   .visit {
-    width: 165px;
+    width: 105px;
     margin-bottom: 20px;
   }
-  .port_bag {
-    transform: rotate(-6deg);
-    z-index: 1;
-    margin-left: 100px;
-    position: relative;
-    left: 20px;
-  }
-  .port_for {
-    transform: rotate(6deg);
-    z-index: 2;
-    margin-right: 10px;
-  }
 }
+
 .ring {
   height: 1px;
   position: relative;
@@ -136,18 +123,13 @@ p.menu_text {
   justify-self: end;
   max-width: 150px;
 }
-.grid_dance {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
+
 .couple {
   max-width: 50%;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 90px;
 }
-.dance {
-  margin-top: 30px;
-}
+
 .notice {
   font-family: var(--font-family-menu);
   font-size: larger;
@@ -157,6 +139,8 @@ p.menu_text {
 }
 .notice_text {
   margin-top: 40px;
+  margin-left: 20px;
+  padding: 5px;
 }
 .bottom {
   margin-bottom: 100px;
@@ -167,12 +151,12 @@ p.menu_text {
   position: relative;
   width: 100%;
   right: 0;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .tile img {
   position: relative;
   justify-self: end;
-  top: -72px;
+  top: -42px;
   justify-self: end;
 }
 .text {
@@ -292,47 +276,68 @@ set på din wireframe, feel free to remove! */
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 2fr 0.7fr 1.5fr;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    .hc_leah {
+      display: block;
+    }
   }
   .text {
     margin-left: 50px;
   }
   .tile {
-    max-width: 15%;
+    max-width: 16%;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-bottom: 150px;
   }
-  .vis:hover img:first-child {
-    animation: vest linear both;
-    /* animation-timeline: view();
-    animation-range: 10% 50%;
-    rotate: -6deg; */
+  .tile img {
+    position: relative;
+    justify-self: end;
+    top: -72px;
+    justify-self: end;
   }
-  @keyframes vest {
-    from {
-      translate: -1vw -2vw;
-    }
-    to {
-      translate: -1vw -3vw;
-    }
-  }
-  .vis:hover img:last-child {
-    animation: nord linear both;
-    /* animation-timeline: view();
-    animation-range: 10% 50% 100%;
-    rotate: 6deg; */
-  }
-  @keyframes nord {
-    from {
-      translate: 1vw -2vw;
-    }
-
-    to {
-      translate: 1vw -3vw;
-    }
+  .ring {
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-bottom: 130px;
   }
   .ring img {
-    top: -120px;
-    max-width: 200px;
+    position: relative;
+    justify-self: end;
+    top: -220px;
+    justify-self: end;
+    max-width: 22%;
   }
+  .vis {
+    .visit {
+      width: 165px;
+    }
+    .port_bag {
+      transform: rotate(-6deg);
+      z-index: 1;
+      margin-left: 100px;
+      position: relative;
+      left: 20px;
+    }
+    .port_for {
+      transform: rotate(6deg);
+      z-index: 2;
+      margin-right: 10px;
+    }
+  }
+
+  .vis:hover img:first-child {
+    transform: translate(-5px, -3px) rotate(-10deg);
+  }
+
+  .vis:hover img:last-child {
+    transform: translate(5px, -3px) rotate(10deg);
+  }
+
   .notice_text {
     margin-top: 50px;
     margin-left: 40px;
@@ -340,6 +345,21 @@ set på din wireframe, feel free to remove! */
   .couple {
     margin-left: 60px;
   }
+
+  .grid_dance {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .couple {
+    order: -1;
+  }
+  .dance {
+    margin-top: 30px;
+  }
+  .notice_text {
+    margin-top: 40px;
+  }
+
   /*************************** Menu Desktop *******************************/
   .dropdown-wrapper {
     display: none;
