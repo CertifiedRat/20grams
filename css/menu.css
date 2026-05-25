@@ -135,7 +135,7 @@ p.menu_text {
   font-size: larger;
 }
 .warn {
-  color: var(--error);
+  color: #f00101;
 }
 .notice_text {
   margin-top: 40px;
