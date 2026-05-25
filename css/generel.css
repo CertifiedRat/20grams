@@ -69,7 +69,6 @@ main {
   max-width: 1200px;
   min-width: 300px;
   width: 100%;
-  padding: 1rem;
   justify-self: center;
 }
 h1 {
