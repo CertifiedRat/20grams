@@ -137,6 +137,9 @@ p.menu_text {
 .warn {
   color: #f00101;
 }
+.smaller {
+  font-size: 15px;
+}
 .notice_text {
   margin-top: 40px;
   margin-left: 20px;
