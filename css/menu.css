@@ -276,9 +276,10 @@ set på din wireframe, feel free to remove! */
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 2fr 0.7fr 1.5fr;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     .hc_leah {
       display: block;
+      margin-top: 70px;
     }
   }
   .text {
@@ -290,7 +291,7 @@ set på din wireframe, feel free to remove! */
     position: relative;
     width: 100%;
     right: 0;
-    margin-bottom: 150px;
+    margin-bottom: 140px;
   }
   .tile img {
     position: relative;
@@ -303,12 +304,12 @@ set på din wireframe, feel free to remove! */
     position: relative;
     width: 100%;
     right: 0;
-    margin-bottom: 130px;
+    margin-bottom: 180px;
   }
   .ring img {
     position: relative;
     justify-self: end;
-    top: -220px;
+    top: -178px;
     justify-self: end;
     max-width: 22%;
   }
