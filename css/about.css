@@ -1,6 +1,6 @@
 /**************** mobil version *******************/
 body#aboutbody {
-  background-image: none;
+  /* background-image: none; */
   background-color: #f4d4a5e3;
 }
 
@@ -9,6 +9,7 @@ main#aboutus {
   background-color: var(--color-background-mathilda);
   background-size: 1200px auto;
   margin-bottom: 3rem;
+  box-shadow: 0 0 20px 5px var(--brown70);
 }
 
 .bakgrund {
@@ -28,6 +29,13 @@ main#aboutus {
 
 h1 {
   text-align: center;
+  background-color: rgba(245, 226, 192, 0.5);
+  box-shadow: 0 0 55px 35px rgba(245, 226, 192, 0.5);
+}
+.hovedoverskrift {
+  padding-block: 2rem;
+  width: fit-content;
+  justify-self: center;
 }
 
 /************* galleri *************/
@@ -65,7 +73,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.h3first h3 {
+.h3first .h3-size {
   text-align: center;
   z-index: 20;
   position: absolute;
@@ -256,7 +264,7 @@ main .gridachivements ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .h3first h3 {
+  .h3first .h3-size {
     position: absolute;
     margin-right: 280px;
     margin-left: 150px;
@@ -323,6 +331,9 @@ main .gridachivements ul {
     width: 100px;
     padding-top: 1.5rem;
   }
+  #hylla button {
+    cursor: pointer;
+  }
 
   .ramme1,
   .ramme2,
@@ -358,6 +369,7 @@ main .gridachivements ul {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
   }
   .grid2-1 {
     grid-template-columns: 2fr 1fr;
