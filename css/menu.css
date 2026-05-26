@@ -9,6 +9,10 @@
   justify-self: center;
   color: var(--color-text);
 }
+.text_intro {
+  padding-top: 30px;
+  margin-left: 20px;
+}
 li.flex {
   display: flex;
   font-family: var(--font-family-menu);
@@ -275,6 +279,7 @@ set på din wireframe, feel free to remove! */
   .text_intro {
     margin-top: 30px;
     margin-left: 20px;
+    padding: 0;
   }
   .grid_1-1-1 {
     display: grid;
