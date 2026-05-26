@@ -372,6 +372,9 @@ footer {
     min-height: 40px;
     padding-left: 0.5rem;
   }
+  li.flex {
+    background: none;
+  }
 
   li a {
     font-family: var(--font-family-h1);
