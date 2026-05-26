@@ -73,7 +73,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.h3first h3 {
+.h3first .h3-size {
   text-align: center;
   z-index: 20;
   position: absolute;
@@ -264,7 +264,7 @@ main .gridachivements ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .h3first h3 {
+  .h3first .h3-size {
     position: absolute;
     margin-right: 280px;
     margin-left: 150px;
