@@ -15,6 +15,7 @@
   --white50: rgba(240, 240, 240, 0.5);
   --white80: rgba(240, 240, 240, 0.8);
   --beige90: rgba(245, 226, 192, 0.9);
+  --brown10: rgba(64, 39, 4, 0.1);
   --lightbeige50: rgba(254, 240, 224, 0.5);
   --brown15: rgba(64, 39, 4, 0.15);
   --brown30: rgba(64, 39, 4, 0.3);
@@ -30,6 +31,7 @@
 
   /* Baggrundsfarver */
   --color-background: var(--beige90);
+  --color-background-mathilda: var(--beige);
   --color-panel-bg: var(--lightbeige);
   --color-menu-panel-bg: var(--lightbeige2nd);
 

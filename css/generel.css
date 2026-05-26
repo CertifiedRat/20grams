@@ -67,6 +67,9 @@ body {
 }
 main {
   max-width: 1200px;
+  min-width: 300px;
+  width: 100%;
+  justify-self: center;
 }
 h1 {
   font-family: var(--font-family-h1);
