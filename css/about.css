@@ -1,6 +1,6 @@
 /**************** mobil version *******************/
 body#aboutbody {
-  background-image: none;
+  /* background-image: none; */
   background-color: #f4d4a5e3;
 }
 
@@ -9,6 +9,7 @@ main#aboutus {
   background-color: var(--color-background-mathilda);
   background-size: 1200px auto;
   margin-bottom: 3rem;
+  box-shadow: 0 0 20px 5px var(--brown70);
 }
 
 .bakgrund {
@@ -28,6 +29,13 @@ main#aboutus {
 
 h1 {
   text-align: center;
+  background-color: rgba(245, 226, 192, 0.7);
+  box-shadow: 0 0 55px 35px rgba(245, 226, 192, 0.7);
+}
+.hovedoverskrift {
+  padding-block: 2rem;
+  width: fit-content;
+  justify-self: center;
 }
 
 /************* galleri *************/
