@@ -67,7 +67,6 @@ body {
 }
 main {
   max-width: 1200px;
-  min-width: 300px;
   width: 100%;
   justify-self: center;
 }
@@ -160,6 +159,7 @@ header {
   padding: 10px 20px;
   background-color: var(--color-headerfooter-bg);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 
   .logo {
     grid-column: 3 / 4;
