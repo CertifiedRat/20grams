@@ -74,7 +74,7 @@ main {
 h1 {
   font-family: var(--font-family-h1);
   font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
   color: var(--color-text);
 }
 h2 {
@@ -104,6 +104,12 @@ p {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-navlink18);
 }
+p.imgcaption {
+  font-size: 12px;
+  color: var(--brown50);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
 a {
   font-family: var(--font-family-primary);
 }
@@ -112,6 +118,37 @@ a.navlink {
   font-size: var(--font-size-navlink);
 }
 
+/********************* Button design ***************************/
+
+.cta-btn {
+  display: block;
+  height: 48px;
+  width: fit-content;
+  padding-inline: 0.7rem;
+  margin-inline: 0.5rem;
+  border: var(--color-btn-border);
+  background-color: var(--color-btn);
+  color: var(--color-text);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-btn);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  place-content: center;
+  text-decoration: none;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  padding-inline: 1.2rem;
+  margin-inline: 0;
+  background-color: var(--color-btn-hover);
+}
+.cta-btn:active {
+  background-color: var(--color-btn-active);
+  color: var(--color-text-inverted);
+  padding-inline: 0.5rem;
+  margin-inline: 0.5rem;
+}
 /**************** Header ***************/
 header {
   position: sticky;
@@ -174,16 +211,14 @@ header {
     transition: 0.2s linear;
     align-self: center;
   }
-  /* .burger .line:last-child {
-  margin-bottom: 0;
-} */
+
   .burger {
     display: none;
   }
   li.socialmedia {
     display: none;
   }
-  .menu .material-symbols-outlined {
+  .menu .mobil-icon {
     display: none;
   }
 
@@ -192,7 +227,7 @@ header {
     .menu {
       display: none;
     }
-    .menu .material-symbols-outlined {
+    .menu .mobil-icon {
       display: inline-block;
     }
     .burger {
@@ -254,7 +289,6 @@ header {
       span {
         display: flex;
         gap: 5px;
-        padding-left: 10px;
         a {
           width: min-content;
           padding: 5px;
@@ -280,26 +314,9 @@ header {
       gap: 20px;
     }
   }
-
-  @media (min-width: 800px) {
-    nav .menu :nth-child(3) {
-      grid-column: 4 / 5;
-    }
-    .menu li.navlink {
-      display: flex;
-      justify-content: center;
-      height: 30px;
-    }
-    .menu a:hover {
-      border-bottom: 1px solid var(--white);
-      color: var(--color-text-inverted);
-    }
-  }
 }
 /************************ Footer *********************************/
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: var(--color-headerfooter-bg);
   h4,
@@ -336,18 +353,19 @@ footer {
     }
   }
   .footer-logo {
-    max-width: 100px;
+    max-width: 150px;
+    justify-self: end;
   }
 
   nav {
-    display: flex;
-    min-height: 150px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-height: 180px;
+    height: min-content;
   }
   ul.footernav {
     display: grid;
     width: fit-content;
-    text-align: center;
     list-style: none;
   }
   li {
@@ -364,6 +382,16 @@ footer {
   span.line {
     height: 1px;
     background-color: var(--white);
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  nav,
+  .grid {
+    max-width: 450px;
+    width: 100%;
+    justify-self: center;
   }
   .footer-location {
     display: grid;
@@ -387,7 +415,96 @@ footer {
     gap: 1rem;
     align-items: center;
   }
+  .footer-socialmedia,
+  .signature {
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
   .footer-socialmedia {
-    justify-content: center;
+    height: 70px;
+    a,
+    span {
+      display: inline-block;
+      height: fit-content;
+    }
+  }
+  .signature {
+    height: fit-content;
+    align-self: end;
+  }
+}
+a .tiktok-icon-white:hover,
+a .facebook-icon-white:hover,
+a .instagram-icon-white:hover {
+  background-color: var(--white15);
+  border-radius: 50%;
+}
+
+/******************* Media 800+ *******************/
+@media (min-width: 800px) {
+  header {
+    nav .menu :nth-child(3) {
+      grid-column: 4 / 5;
+    }
+    .menu li.navlink {
+      display: flex;
+      justify-content: center;
+      height: 30px;
+    }
+    .menu a:hover {
+      border-bottom: 1px solid var(--white);
+      color: var(--color-text-inverted);
+    }
+  }
+  footer {
+    .footer-wrapper {
+      grid-template-columns: repeat(4, auto);
+      justify-self: center;
+      width: 100%;
+      nav {
+        grid-column: span 2;
+        max-height: 200px;
+        height: 100%;
+        max-width: 100%;
+        .footer-logo {
+          align-content: center;
+          justify-self: center;
+        }
+      }
+    }
+    .slogan {
+      grid-column: span 4;
+    }
+    .footer-logo {
+      order: -1;
+    }
+    .line-top {
+      grid-column: span 4;
+      grid-row: 2/3;
+    }
+    .line-bottom {
+      grid-column: span 4;
+      grid-row: 4/5;
+    }
+    .footer-socialmedia {
+      grid-column: 4/5;
+      grid-row: 3/4;
+      align-self: center;
+      height: fit-content;
+    }
+    .signature {
+      grid-column: 1/-1;
+      grid-row: 5/6;
+    }
+    .grid {
+      display: grid;
+      max-width: 100%;
+      gap: 0.5rem;
+      height: fit-content;
+      h4 {
+        display: none;
+      }
+    }
   }
 }

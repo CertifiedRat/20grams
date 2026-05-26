@@ -16,10 +16,13 @@
   --white80: rgba(240, 240, 240, 0.8);
   --beige90: rgba(245, 226, 192, 0.9);
   --brown10: rgba(64, 39, 4, 0.1);
+  --lightbeige50: rgba(254, 240, 224, 0.5);
+  --brown15: rgba(64, 39, 4, 0.15);
   --brown30: rgba(64, 39, 4, 0.3);
   --brown50: rgba(64, 39, 4, 0.5);
   --brown70: rgba(64, 39, 4, 0.7);
   --brown85: rgba(64, 39, 4, 0.85);
+  --blue90: rgba(42, 47, 61, 0.9);
   --error10: rgba(255, 0, 0, 0.1);
 
   /* Tekst */
@@ -34,14 +37,20 @@
 
   /* Buttons/Icons/Accordions etc */
   --color-btn: var(--yellow);
-  --color-btn-border: 1px solid var(--brown30);
+  --color-btn-border: 1px solid #bf8f1a;
   --color-btn-hover: var(--yellow60);
   --color-btn-active: var(--brown);
 
-  --color-summary: var(--brown70);
-  --color-summary-hover: var(--brown50);
-  --color-summary-open: var(--brown85);
-  --color-accordion-bg: var(--lightbeige);
+  --color-summary: var(--blue);
+  --color-summary-hover: var(--blue90);
+  --color-summary-open: var(--blue);
+  --color-accordion-bg: var(--lightbeige50);
+  --details-border: 1px solid var(--brown30);
+
+  --form-hover: var(--brown15);
+  --form-active: var(--brown30);
+  --form-error-border: 1px solid var(--error);
+  --form-error-bg: var(--error10);
 
   /* Header/footer */
   --color-headerfooter-bg: var(--blue);
@@ -60,6 +69,7 @@
   --font-size-h3: 26px;
   --font-size-h4: 22px;
   --font-size-navlink: 20px;
+  --font-size-btn: 18px;
   --font-size-navlink18: 18px;
   --font-size-p: 16px;
 

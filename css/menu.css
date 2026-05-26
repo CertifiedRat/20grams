@@ -1,0 +1,446 @@
+#menu {
+  background-color: var(--color-background);
+  /* border: var(--border); */
+}
+h5 {
+  font-family: var(--font-family-menu);
+  font-size: 50px;
+  font-weight: 200;
+  justify-self: center;
+  color: var(--color-text);
+}
+li.flex {
+  display: flex;
+  font-family: var(--font-family-menu);
+  list-style: none;
+  background: #ebe1d07e;
+  /* padding-left: 100px; */
+}
+#topdown {
+  padding-left: 10px;
+}
+.grid_1-1-1 {
+  margin-bottom: 30px;
+  .hc_leah {
+    display: none;
+  }
+  .intro {
+    margin-top: 20px;
+  }
+}
+.brunch_text {
+  margin-bottom: 20px;
+}
+.flex {
+  display: flex;
+  .punktum {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: dotted 1.5px var(--brown);
+    margin-bottom: 5px;
+    margin-inline: 6px;
+  }
+}
+.description {
+  font-size: small;
+  margin-left: 20px;
+}
+p.menu_text {
+  font-family: var(--font-family-menu);
+  text-wrap: nowrap;
+}
+.flex_title {
+  font-family: var(--font-family-menu);
+  font-weight: 600;
+  list-style: none;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+/* button */
+.cta-btn {
+  display: block;
+  height: 48px;
+  /* min-width: 140px; */
+  width: fit-content;
+  padding-inline: 0.5rem;
+  margin-inline: 0.5rem;
+  border: var(--color-btn-border);
+  background-color: var(--color-btn);
+  color: var(--color-text);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-btn);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  place-content: center;
+  text-decoration: none;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.cta-btn:hover {
+  padding-inline: 1rem;
+  margin-inline: 0;
+  background-color: var(--color-btn-hover);
+}
+.cta-btn:active {
+  background-color: var(--color-btn-active);
+  color: var(--color-text-inverted);
+  padding-inline: 0.5rem;
+  margin-inline: 0.5rem;
+}
+.visit_us {
+  margin-bottom: 30px;
+}
+
+.vis {
+  display: flex;
+  margin-right: 20px;
+  gap: 5px;
+  .visit {
+    width: 105px;
+    margin-bottom: 20px;
+  }
+}
+
+.ring {
+  height: 1px;
+  position: relative;
+  width: 100%;
+  right: 0;
+  margin-bottom: 100px;
+}
+.ring img {
+  position: relative;
+  justify-self: end;
+  top: -72px;
+  justify-self: end;
+  max-width: 150px;
+}
+
+.couple {
+  max-width: 50%;
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.notice {
+  font-family: var(--font-family-menu);
+  font-size: larger;
+}
+.warn {
+  color: #f00101;
+}
+.smaller {
+  font-size: 15px;
+}
+.notice_text {
+  margin-top: 40px;
+  margin-left: 20px;
+  padding: 5px;
+}
+.bottom {
+  margin-bottom: 100px;
+}
+.tile {
+  max-width: 20%;
+  height: 1px;
+  position: relative;
+  width: 100%;
+  right: 0;
+  margin-bottom: 70px;
+}
+.tile img {
+  position: relative;
+  justify-self: end;
+  top: -42px;
+  justify-self: end;
+}
+.text {
+  margin-left: 20px;
+}
+
+/************************* Menu Mobil *************************************/
+/* Har stylet lidt på det, change as you wish~ */
+
+/* Skjul menukortene per default, tilføj styling(Det er kun styling af boksen omkring
+menukortene, ikke boksen der også har dropdown menuen - det er .frame nedenunder) */
+.menukort {
+  display: none;
+  padding: 1rem;
+}
+.frame {
+  padding-bottom: 1rem;
+  background-color: var(--color-menu-panel-bg);
+  border: 1px solid rgba(64, 39, 4, 0.1);
+  border-radius: 5px;
+}
+/* Vis det valgte kort der har fået classen active, ved hjælp af vores js kode */
+.menukort.active {
+  display: block;
+}
+
+/* Styling af dropdown menuen (select) */
+.menu-valg {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0;
+  padding: 0.5rem 1rem;
+  margin-block: 1rem;
+  font-family: var(--font-family-menu);
+  font-size: 28px;
+  color: var(--color-text);
+  text-align: center;
+  width: 90%;
+  margin-left: 30px;
+  text-transform: uppercase;
+  text-decoration: underline 2px var(--brown50);
+  border: 1px solid var(--brown30);
+  border-radius: 1;
+  cursor: pointer;
+  background-color: var(--white50);
+}
+/* Farveskift når der trykkes på menuen */
+select:open {
+  background-color: rgba(196, 194, 194, 0.5);
+}
+/* Styling af menu valgene når man trykker på dropdown menuen */
+.menu-valg option {
+  font-size: 20px;
+  background-color: var(--white50);
+  padding-block: 0.5rem;
+  border-bottom: 0.5px solid var(--brown30);
+}
+/* Farven på den menu du er inde på + når du trykker på en ny */
+.menu-valg option:checked,
+.menu-valg option:focus {
+  background-color: #e1d2c1;
+  border: var(--brown30);
+}
+/* Slet denne hvis du hellere vil have ikonet til at være et flueben, eller sæt hvad end du vil have ind i content:D */
+.menu-valg option::checkmark {
+  content: ">";
+  padding-left: 0.5rem;
+}
+/* Trekanten i siden, måtte indsætte en svg da den default drillede */
+select.menu-valg::picker-icon {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path fill="currentColor" d="M1 21h22L12 2" /></svg>');
+  rotate: 60deg;
+  transition: linear 0.2s;
+  height: min-content;
+}
+/* Animation; roterer */
+select.menu-valg:open::picker-icon {
+  rotate: 0deg;
+}
+
+/******* Andet/Tilføjet *******/
+/* Tilføjede class'en menu-panel til div'en udenom hele menusektionen, som 
+set på din wireframe, feel free to remove! */
+.menu-panel {
+  background-color: var(--color-panel-bg);
+  padding: 2rem 1rem;
+}
+/* måtte sætte (autumn season) i sin egen <li> da linjen blev for lang på mobil, .small-txt er styling til den nye linje. */
+.small_txt {
+  font-size: 14px;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  margin-bottom: 0.5rem;
+}
+.desktop {
+  display: none;
+}
+.menupic {
+  display: none;
+}
+.menu-valg-desktop-wrapper {
+  display: none;
+}
+/*************************************************************/
+
+@media (min-width: 800px) {
+  li.flex {
+    font-family: var(--font-family-menu);
+    list-style: none;
+    padding-left: 20px;
+    background: none;
+  }
+  .text_intro {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr 1.5fr;
+    margin-bottom: 30px;
+    .hc_leah {
+      display: block;
+      margin-top: 70px;
+    }
+  }
+  .text {
+    margin-left: 50px;
+  }
+  .tile {
+    max-width: 16%;
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-bottom: 140px;
+  }
+  .tile img {
+    position: relative;
+    justify-self: end;
+    top: -72px;
+    justify-self: end;
+  }
+  .ring {
+    height: 1px;
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-bottom: 180px;
+  }
+  .ring img {
+    position: relative;
+    justify-self: end;
+    top: -178px;
+    justify-self: end;
+    max-width: 22%;
+  }
+  .vis {
+    .visit {
+      width: 165px;
+    }
+    .port_bag {
+      transform: rotate(-6deg);
+      z-index: 1;
+      margin-left: 100px;
+      position: relative;
+      left: 20px;
+    }
+    .port_for {
+      transform: rotate(6deg);
+      z-index: 2;
+      margin-right: 10px;
+    }
+  }
+
+  .vis:hover img:first-child {
+    transform: translate(-5px, -3px) rotate(-10deg);
+  }
+
+  .vis:hover img:last-child {
+    transform: translate(5px, -3px) rotate(10deg);
+  }
+
+  .notice_text {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+  .couple {
+    margin-left: 60px;
+  }
+
+  .grid_dance {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .couple {
+    order: -1;
+  }
+  .dance {
+    margin-top: 30px;
+  }
+  .notice_text {
+    margin-top: 40px;
+  }
+
+  /*************************** Menu Desktop *******************************/
+  .dropdown-wrapper {
+    display: none;
+  }
+  .menu-valg-desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+  }
+  .menukort {
+    display: none;
+  }
+  .menukort.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Udseendet på menu punkterne/knapperne */
+  .menu-valg-desktop {
+    border: none;
+    font-family: var(--font-family-menu);
+    color: var(--color-text);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+  }
+  .menu-valg-desktop:hover,
+  .menu-valg-desktop:focus,
+  .menu-valg-desktop:active {
+    text-decoration: underline;
+  }
+  /* H5'eren/menukort titlerne */
+  .desktop {
+    display: block;
+    justify-items: center;
+    margin-bottom: 1rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .menupic {
+    display: block;
+    grid-column: 2/3;
+    margin-left: 20px;
+    place-self: center;
+  }
+  .coffeecup {
+    max-width: 350px;
+    width: 100%;
+  }
+  .otherdrinks {
+    max-width: 260px;
+    width: 100%;
+    grid-row: 1/3;
+  }
+  .sandwiches,
+  .brunches {
+    max-width: 450px;
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .cakes {
+    max-width: 300px;
+    width: 100%;
+  }
+  .frame {
+    margin-inline: 20px;
+  }
+  /* .frame2 {
+    padding-inline: 150px;
+  } */
+  .visit_us {
+    margin-left: 20px;
+  }
+  .cta-btn,
+  .cta-btn:active,
+  .cta-btn:hover {
+    margin-left: 20px;
+  }
+}
