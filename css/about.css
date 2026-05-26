@@ -172,7 +172,7 @@ main .gridachivements ul {
 .h3welcomesecond {
   margin-bottom: 2rem;
 }
-li {
+#aboutus li {
   color: var(--brown);
   font-size: 35px;
   margin-top: 25px;
