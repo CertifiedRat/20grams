@@ -14,7 +14,7 @@ main#aboutus {
 
 .bakgrund {
   /* styling */
-  background-image: url(/imgs/imgsabout/backgroundabout.webp);
+  background-image: url("/imgs/imgsabout/backgroundabout.webp");
   background-size: 1200px auto;
 }
 
