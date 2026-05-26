@@ -13,8 +13,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="imgs/generel/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="imgs/generel/favicon/favicon-16x16.png" />
   <link rel="manifest" href="imgs/generel/favicon/site.webmanifest" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward_ios,calendar_add_on,location_on,loyalty,mail,menu_book,open_in_new,other_houses" />
   <title>Menu</title>
 </head>
 
@@ -28,26 +26,26 @@
     <nav>
       <ul class="menu">
         <li class="navlink">
-          <a class="navlink" href="index.html"><span class="material-symbols-outlined">other_houses</span>Home</a>
+          <a class="navlink" href="index.html"><span class="home-icon mobil-icon"></span>Home</a>
         </li>
         <li class="navlink">
-          <a class="navlink" href="menu.html"><span class="material-symbols-outlined">menu_book</span>Menu</a>
+          <a class="navlink" href="menu.html"><span class="menu-icon mobil-icon"></span>Menu</a>
         </li>
         <li class="navlink">
-          <a class="navlink" href="about.html"><span class="material-symbols-outlined">loyalty</span>About Us</a>
+          <a class="navlink" href="about.html"><span class="about-icon mobil-icon"></span>About Us</a>
         </li>
         <li class="navlink">
-          <a class="navlink" href="contact.html"><span class="material-symbols-outlined">calendar_add_on</span>Booking &
+          <a class="navlink" href="contact.html"><span class="booking-icon mobil-icon"></span>Booking &
             Contact</a>
         </li>
         <li class="socialmedia">
-          <span><a href="https://www.instagram.com/20gramsdk"><span class="mdi--instagram"></span></a><a
-              href="https://www.facebook.com/20gramscph"><span class="gg--facebook"></span></a><a
-              href="https://www.tiktok.com/@20gramsdk"><span class="ic--baseline-tiktok"></span></a></span>
+          <span><a href="https://www.instagram.com/20gramsdk"><span class="instagram-icon"></span></a><a
+              href="https://www.facebook.com/20gramscph"><span class="facebook-icon"></span></a><a
+              href="https://www.tiktok.com/@20gramsdk"><span class="tiktok-icon"></span></a></span>
           <p>20Grams 2026</p>
         </li>
       </ul>
-      <button class="burger">
+      <button class="burger" aria-label="Toggle menu">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -90,7 +88,7 @@
       <div class="frame">
         <!-- Dropdown menuen i mobil -->
         <div class="dropdown-wrapper">
-          <select id="menu-dropdown" class="menu-valg">
+          <select id="menu-dropdown" class="menu-valg" aria-label="Select a menu category">
             <option value="coffee" selected>Coffee</option>
             <option value="drinks">Other Drinks</option>
             <option value="sandwich">Sandwiches</option>
@@ -522,6 +520,79 @@
       </div>
     </div>
   </main>
+
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="slogan">
+        <p><span class="brandname">20Grams</span> - Where Coffee Is Just the Beginning</p>
+      </div>
+      <nav>
+        <ul class="footernav">
+          <li class="flex"><a href="index.html">Home</a></li>
+          <li class="flex"><a href="menu.html">Menu</a></li>
+          <li class="flex"><a href="about.html">About Us</a></li>
+          <li class="flex"><a href="contact.html">Booking & Contact</a></li>
+        </ul>
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="imgs/generel/logo.webp" alt="Logo" />
+          </a>
+        </div>
+      </nav>
+      <span class="line line-top"></span>
+      <div class="grid">
+        <h4 class="navlink">Our Locations</h4>
+              <div class="footer-location">
+        <span class="flex"><span class="mdi--location"></span>
+          <p class="navlink">Nørreport</p>
+        </span>
+        <div class="flex openinghours">
+          <p>Monday - Saturday</p>
+          <p>08:00 — 18:45</p>
+        </div>
+        <span class="line"></span>
+        <div class="flex openinghours">
+          <p>Sunday</p>
+          <p>08:00 — 17:45</p>
+        </div>
+      </div>
+      <div class="footer-location">
+        <span class="flex"><span class="mdi--location"></span>
+          <p class="navlink">Vesterport</p>
+        </span>
+        <div class="flex openinghours">
+          <p>Monday - Saturday</p>
+          <p>09:00 — 18:45</p>
+        </div>
+        <span class="line"></span>
+        <div class="flex openinghours">
+          <p>Sunday</p>
+          <p>09:00 — 17:45</p>
+        </div>
+      </div>
+      </div>
+
+      <span class="line line-bottom"></span>
+      <div class="footer-socialmedia">
+        <span>
+          <a href="https://www.instagram.com/20gramsdk" target="_blank" aria-label="Instagram">
+            <span class="instagram-icon-white"></span>
+          </a>
+          <a href="https://www.facebook.com/20gramscph" target="_blank" aria-label="Facebook">
+            <span class="facebook-icon-white"></span>
+          </a>
+          <a href="https://www.tiktok.com/@20gramsdk" target="_blank" aria-label="TikTok">
+            <span class="tiktok-icon-white"></span>
+          </a>
+        </span>
+      </div>
+      <div class="signature">
+        <p class="brandname">20Grams</p>
+        <p class="cph">COPENHAGEN</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="javascript/login.js"></script>
   <script src="javascript/burgermenu.js"></script>
