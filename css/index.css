@@ -9,6 +9,17 @@
   }
 }
 
+a.copyright-txt {
+  display: block;
+  font-family: var(--font-family-primary);
+  font-size: 12px;
+  color: var(--brown30);
+  text-decoration: none;
+  justify-self: right;
+}
+a.copyright-txt:hover {
+  text-decoration: underline;
+}
 /* ********** EXPLORE BOXES ********** */
 
 .grid_1_1_1 {
