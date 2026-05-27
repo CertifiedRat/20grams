@@ -226,7 +226,7 @@ main .gridachivements ul {
 
   .test {
     /* styling */
-    background-image: url(/imgs/imgsabout/backgroundabout.webp);
+    background-image: url(../imgs/imgsabout/backgroundabout.webp);
     background-size: 1200px auto;
   }
   /************* galleri ******************/
@@ -353,7 +353,7 @@ main .gridachivements ul {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--beige);
-    background-image: url(/imgs/imgsabout/kortbakgrund.webp);
+    background-image: url(../imgs/imgsabout/kortbakgrund.webp);
     background-position: right;
     background-size: auto 400px;
     background-repeat: no-repeat;
