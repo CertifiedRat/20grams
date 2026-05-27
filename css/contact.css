@@ -120,8 +120,8 @@ main#contact {
   }
   .accordion-indhold {
     border: var(--details-border);
-    background: url(../imgs/booking_contact/bg-img.webp) no-repeat right bottom;
-    background-size: 40% auto;
+    /* background: url(../imgs/booking_contact/bg-img.webp) no-repeat right bottom;
+    background-size: 40% auto; */
     padding-inline: 1rem;
     h4 {
       font-size: 20px;
@@ -282,6 +282,10 @@ main#contact {
     section.contact span#deco-line.deco-line {
       margin-block: 4rem;
       opacity: 0.3;
+    }
+    .accordion-indhold {
+      background: url(../imgs/booking_contact/bg-img.webp) no-repeat right bottom;
+      background-size: 40% auto;
     }
 
     p.navlink {
