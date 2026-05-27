@@ -1,6 +1,7 @@
 #menu {
   background-color: var(--color-background);
-  /* border: var(--border); */
+  border: var(--border);
+  margin-top: 2rem;
 }
 .h5-size {
   font-family: var(--font-family-menu);
@@ -112,13 +113,15 @@ p.menu_text {
     margin-bottom: 20px;
   }
 }
-
+.deco-line {
+  margin-block: 40px;
+  padding-inline: 20px;
+}
 .ring {
   height: 1px;
   position: relative;
   width: 100%;
   right: 0;
-  margin-bottom: 100px;
 }
 .ring img {
   position: relative;
@@ -126,6 +129,7 @@ p.menu_text {
   top: -72px;
   justify-self: end;
   max-width: 150px;
+  z-index: 10;
 }
 
 .couple {
@@ -158,7 +162,7 @@ p.menu_text {
   position: relative;
   width: 100%;
   right: 0;
-  margin-bottom: 70px;
+  z-index: 10;
 }
 .tile img {
   position: relative;
@@ -278,20 +282,32 @@ set på din wireframe, feel free to remove! */
   }
   .text_intro {
     margin-top: 30px;
-    margin-left: 20px;
-    padding: 0;
+    margin-left: 80px;
+    max-width: 65ch;
+  }
+  .intro {
+    margin-top: 30px;
+    margin-left: 40px;
+    max-width: 70ch;
   }
   .grid_1-1-1 {
     display: grid;
-    grid-template-columns: 2fr 0.7fr 1.5fr;
-    margin-bottom: 30px;
+    grid-template-columns: 3fr 0.1fr 1.3fr;
+    margin-bottom: 10px;
+    font-size: 17px;
     .hc_leah {
       display: block;
-      margin-top: 70px;
+      /* margin-top: 70px; */
+      position: relative;
+      top: 70px;
+      /* margin-bottom: -90px; */
     }
   }
   .text {
     margin-left: 50px;
+  }
+  .deco-line {
+    margin-block: 60px;
   }
   .tile {
     max-width: 16%;
@@ -299,7 +315,6 @@ set på din wireframe, feel free to remove! */
     position: relative;
     width: 100%;
     right: 0;
-    margin-bottom: 140px;
   }
   .tile img {
     position: relative;
@@ -312,7 +327,6 @@ set på din wireframe, feel free to remove! */
     position: relative;
     width: 100%;
     right: 0;
-    margin-bottom: 180px;
   }
   .ring img {
     position: relative;

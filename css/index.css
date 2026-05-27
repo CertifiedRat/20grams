@@ -4,7 +4,6 @@
   background-color: var(--color-background);
   border: 1px solid var(--brown);
   margin: 2rem auto;
-  border-radius: 33px;
   h1 {
     font-weight: var(--font-weight-bold);
   }

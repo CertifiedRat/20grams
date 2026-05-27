@@ -62,7 +62,7 @@
   /* <span class="location-icon-brown"></span> */
 }
 .location-icon-white {
-  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20"><path fill="%23f0f0f0" d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13m0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4" /></svg>');
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 20 20"><path fill="%23f0f0f0" d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13m0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4" /></svg>');
   /* <span class="location-icon-white"></span> */
 }
 .mail-icon {
