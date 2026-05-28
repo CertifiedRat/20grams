@@ -10,6 +10,7 @@ main#contact {
   background-repeat: no-repeat;
   background-position: top right;
   justify-self: center;
+  overflow: hidden;
   .contact .deco-line {
     margin-block: 3rem;
   }
@@ -243,6 +244,15 @@ main#contact {
     }
     .flex {
       justify-content: space-around;
+    }
+    #loop {
+      position: relative;
+      height: 1px;
+    }
+    #loop img {
+      position: relative;
+      top: -180px;
+      left: -58px;
     }
     a {
       display: block;
