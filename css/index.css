@@ -16,6 +16,7 @@ a.copyright-txt {
   color: var(--brown30);
   text-decoration: none;
   justify-self: right;
+  padding-right: 2rem;
 }
 a.copyright-txt:hover {
   text-decoration: underline;
